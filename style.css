@@ -36,9 +36,12 @@ header.gradient {
 
 .nav ul {
 	padding: 30px 20px;
-	text-align: left;
-	margin: 0 0 0 180px;
+	margin: 0 auto;
 	font-family: 'Lato';
+	width: 70.5%;
+	position: relative;
+	top: 0;
+	right: 20px;
 }
 
 .nav ul li {
@@ -64,11 +67,14 @@ header.gradient {
 }
 
 .background-image {
+	width: 100%;
 	background: rgb(0, 67, 168);
 	padding: 20px 0;
+	position: relative;
 }
 
 .background-image img {
+	width: 70.5%;
 	display: block;
 	margin: 0 auto;
 }
@@ -79,8 +85,8 @@ header.gradient {
 	background: url(img/transparent.png) repeat-x;
 	background-size: 40px 40px;
 	position: absolute;
-	top: 60%;
-    left: 14.8%;
+	top: 80%;
+    left: 14.7%;
 }
 
 .transparent-image p {
