@@ -10,10 +10,9 @@
 
 /*MAIN CONTAINER*/
 .container {
-	width: 100%
+	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0;
 }
 
 /*CLEARFIX*/
@@ -148,19 +147,23 @@ body {
 	color: #fff;
 	margin-bottom: 50px;
 }
-.second > .col-4 {
+.second  {
 	background-color: rgba(236, 240, 241,1.0);
 }
 
-.third > .col-2 {
+.third  {
 	background: rgba(192, 57, 43,1.0);
 }
 
-.fourth > .col-6 {
+.fourth {
 	background: rgba(127, 140, 141,1.0)
 }
 .fifth {
 	background: rgba(189, 195, 199,1.0);
+}
+
+.seventh {
+	background: rgba(192, 57, 43,1.0)
 }
 
 .fifth p {
@@ -190,6 +193,7 @@ body {
 
 img {
 	transition: .5s;
+	width: 100%;
 }
 	
 img:hover {
