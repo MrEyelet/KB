@@ -17,7 +17,7 @@
 }
 
 /*CLEARFIX*/
-.row::befor,
+.row::before,
 .row::after {
 	content: " ";
 	display: table;
