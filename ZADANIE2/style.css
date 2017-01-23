@@ -8,6 +8,12 @@
 	margin: 0 auto;
 }
 
+[class*="col-"] {
+	float:left;
+	min-height:1px;
+	padding:12px;
+}
+
 /*CLERFIX*/
 
 .row::before,
@@ -16,13 +22,6 @@
 	display: table;
 	clear: both;
 }
-
-[class*="col-"] {
-	float:left;
-	min-height:1px;
-	padding:12px;
-}
-
 /*12 COLUMN GRID*/
 .col-1{width:8.33%;}
 .col-2{width:16.66%;}
@@ -51,7 +50,9 @@
 .col-offset-9{margin-left:75%;}
 .col-offset-10{margin-left:83.33%;}
 .col-offset-11{margin-left:91.66%;}
+
 /*===================END OF GRID=====================*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 
 * {
@@ -125,13 +126,18 @@ header {
 }
 
 .second {
-	margin: 10px 0 0 0;
+	margin: 15px 0 0 0;
+	padding: 0;
 }
 
 .banner img {
 	padding: 10px; 
 	width: 100%;
 	background: #DDDDDD;
+}
+
+.leftside {
+	padding: 15px 15px 15px 0;
 }
 
 .article, 
@@ -202,6 +208,11 @@ span > img {
 	padding: 0;
 }
 
+.f-nav ul {
+	padding: 10px 0;
+	text-align: center;
+}
+
 .f-nav ul li {
 	padding: 0 10px;
 	display: inline-block;
@@ -213,10 +224,6 @@ span > img {
 	border-right: none
 }
 
-.f-nav ul {
-	padding: 10px 0;
-	text-align: center;
-}
 
 .f-nav ul li a {
 	color: #fff;
