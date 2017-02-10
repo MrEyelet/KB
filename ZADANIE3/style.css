@@ -85,7 +85,6 @@ button:hover {
 	background-size: cover;
 	background-position: top;
 	overflow: hidden;
-	eight: 100vh;
 	min-height: 500px;
 	color: #fff;
 	margin-bottom: 100px;
@@ -288,7 +287,6 @@ button:hover {
 	margin-right: 15px;
 	cursor: pointer;
 	transition: .5s;
-	ine-height: 196px;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -299,7 +297,6 @@ button:hover {
 }
 
 .rectangle-layer i:hover {
-	ransform: scale(2,2);
 	cursor: pointer;
 	color: #999;
 }
