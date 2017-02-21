@@ -1,0 +1,402 @@
+
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Lato:300,400,700')
+
+$fonts1:	'Just Another Hand', cursive
+$fonts2:	'Lato', sans-serif
+
+$white:		#fff 
+$redish:	#ff3333
+$black: 	#000
+$grey1: 	#f2f2f2
+$grey2: 	#e6e6e6
+
+=transition($trans)
+	-webkit-transition: ($trans)
+	transition:			($trans)
+
+.button
+	background: none
+	border-shadow: none
+	background: none
+	border-shadow: none
+	text-transform: uppercase
+	font-weight: 700
+	padding: 15px 30px
+	cursor: pointer
+	background-position: 100% 0
+	background-size: 300%
+	+transition(.5s)
+
+.gradient-white
+	background-image: -webkit-linear-gradient(90deg, $white 50%, transparent 50%)
+	background-image: -o-linear-gradient(90deg, $white 50%, transparent 50%)
+	background-image: -moz-linear-gradient(90deg, $white 50%, transparent 50%)
+	background-image: linear-gradient(90deg, $white 50%, transparent 50%)
+
+.gradient-red
+	background-image: -webkit-linear-gradient(90deg, $redish 50%, transparent 50%)
+	background-image: -o-linear-gradient(90deg, $redish 50%, transparent 50%)
+	background-image: -moz-linear-gradient(90deg, $redish 50%, transparent 50%)
+	background-image: linear-gradient(90deg, $redish 50%, transparent 50%)
+
+.button
+	&:hover
+		background-position: 0 100%
+
+
+/*GRID*/
+.container
+	max-width: 960px
+	width: 100%
+	margin: 0 auto
+
+/*CLEARFIX*/
+.clearfix::before,
+.clearfix::after
+	content: " "
+	display: table
+	clear: both
+
+/*FOR ALL COLUMNS*/
+
+[class*="col-"]
+	float: left
+	min-height: 1px
+	padding: 25px
+
+/*12 COLUMNS GRID*/
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+
+
+/*12 COLUMNS OFFSET*/
+.col-offset-0 
+	margin-left: 0
+.col-offset-1 
+	margin-left: 8.33%
+.col-offset-2 
+	margin-left: 16.66%
+.col-offset-3 
+	margin-left: 25%
+.col-offset-4 
+	margin-left: 33.33%
+.col-offset-5 
+	margin-left: 41.66%
+.col-offset-6 
+	margin-left: 50%
+.col-offset-7 
+	margin-left: 58.33%
+.col-offset-8 
+	margin-left: 66.66%
+.col-offset-9 
+	margin-left: 75%
+.col-offset-10 
+	margin-left: 83.33%
+.col-offset-11 
+	margin-left: 91.66%
+/*END OF GRID*/
+*
+	box-sizing: border-box
+
+body
+	margin: 0
+	padding: 0
+	font-family: $fonts2
+section
+	padding-bottom: 100px
+	padding-top: 100px
+header
+	background: $black
+	height: 100px 
+	width: 100%
+	position: fixed
+	z-index: 100
+	nav
+		.fa-bars
+			color: $white
+			float: right
+			visibility: hidden
+		h2
+			float: left
+			font-family: $fonts1
+			font-size: 36px
+			margin: 0
+			a 
+				line-height: 100px
+				text-decoration: none
+				color: $redish
+		ul
+			float: right
+			list-style-type: none
+			font-size: 0
+			text-transform: uppercase
+			margin: 0
+			padding: 0
+			li
+				display: inline-block
+				line-height: 100px
+				font-size: 16px
+				a 
+					display: block
+					text-decoration: none
+					padding-left: 50px
+					color: $white
+					+transition(.5s)
+					&:hover
+						color: $redish
+
+					
+.hero
+	background: url(../img/banner.jpg)
+	background-position: top
+	background-size: cover
+	overflow: hidden
+	position: relative
+	top: 100px
+	min-height: 550px
+	margin-top: 0
+	color: $white
+	margin-bottom: 100px
+	h1
+		text-transform: uppercase
+		font-size: 40px
+		font-weight: 400
+		margin-bottom: 80px
+		margin-top: 150px
+		span 
+			font-weight: 700
+			text-shadow: 3px 3px 10px $redish
+	button
+		border: 3px solid $white
+		color: $white
+		@extend .gradient-white
+		@extend .button
+		&:hover
+			color: $redish
+.wide-text
+	h2
+		color: $redish
+		text-transform: uppercase
+		letter-spacing: 1px
+		margin-bottom: 50px
+		
+	p 
+		line-height: 30px
+		margin-bottom: 50px
+		
+	button
+		@extend .button
+		@extend .gradient-red
+		border: 3px solid $redish
+		color: $redish
+		&:hover
+			color: $white	
+
+.two-columns-text
+	background: $grey1
+	.col-6
+		+transition(.5s)
+		&:hover
+			background: $grey2
+			cursor: pointer
+	h3
+		color: $redish
+		text-transform: uppercase
+		font-size: 20px
+		letter-spacing: 1px
+		
+	p 
+		line-height: 25px
+		
+	img
+		width: 100%
+		
+
+.three-cloumns-text
+	.fa 
+		color: $redish
+	h3
+		color: $redish
+		text-transform: uppercase
+		font-size: 20px
+	p 
+		line-height: 25px
+		margin-bottom: 50px
+	button
+		border: 3px solid $redish
+		color: $redish
+		@extend .button
+		@extend .gradient-red
+		&:hover
+			color: $white
+
+footer
+	background: $redish
+	h2
+		color: $white
+		text-transform: uppercase
+		font-size: 32px
+		letter-spacing: 1px
+		margin-left: 15px
+	.col-6
+		label
+			text-transform: uppercase
+			color: $white
+			font-weight: 700
+			font-size: 16px
+		input
+			width: 100%
+			margin: 15px 0 50px
+			border: 3px solid rgba(255, 255, 255, .4)
+			background: none
+			&:focus
+				border: 5px solid rgb(255, 255, 255)
+				outline: 0
+	.col-12
+		label
+			text-transform: uppercase
+			color: $white
+			font-weight: 700
+			font-size: 16px
+		textarea
+			width: 100%
+			margin: 15px 0 50px
+			border: 3px solid rgba(255, 255, 255, .4)
+			background: none
+			&:focus
+				border: 5px solid rgb(255, 255, 255)
+				outline: 0
+input
+	@extend .button
+	@extend .gradient-white
+	color: $white
+	border: 3px solid $white
+	&:hover
+		color: $redish
+
+
+/*MEDIA QUERIES*/
+
+@media(max-width: 768px)
+
+	.col-m-1 
+		width: 8.33%
+	.col-m-2 
+		width: 16.66%
+	.col-m-3 
+		width: 25%
+	.col-m-4 
+		width: 33.33%
+	.col-m-5 
+		width: 41.66%
+	.col-m-6 
+		width: 50%
+	.col-m-7 
+		width: 58.33%
+	.col-m-8 
+		width: 66.66%
+	.col-m-9 
+		width: 75%
+	.col-m-10 
+		width: 83.33%
+	.col-m-11 
+		width: 91.66%
+	.col-m-12 
+		width: 100%
+	header
+		nav
+			.fa-bars
+				float: right
+				visibility: visible
+				line-height: 100px
+			ul 
+				width: 100%
+				text-align: center
+				float: none
+				position: relative
+				top: -400px
+				li
+					float: none
+					display: block
+					color: $white
+					background: rgba(0, 0, 0, 0.7)
+					border: 1px solid rgba(0, 0, 0, 0.3)
+					a 
+						padding: 0
+						height: 50px
+						line-height: 50px
+
+	.hero
+		padding-top: 0
+		h1
+			margin-bottom: 25px
+			margin-top: 0
+
+	.two-columns-text
+		.col-6
+			+transition(0)
+			&:hover
+				background: none
+				cursor: pointer
+		p
+			margin-bottom: 50px
+	.three-cloumns-text
+		button
+			margin-bottom: 50px
+
+
+@media(max-width: 480px)
+
+	.col-s-1 
+		width: 8.33%
+	.col-s-2 
+		width: 16.66%
+	.col-s-3 
+		width: 25%
+	.col-s-4 
+		width: 33.33%
+	.col-s-5 
+		width: 41.66%
+	.col-s-6 
+		width: 50%
+	.col-s-7 
+		width: 58.33%
+	.col-s-8 
+		width: 66.66%
+	.col-s-9 
+		width: 75%
+	.col-s-10 
+		width: 83.33%
+	.col-s-11 
+		width: 91.66%
+	.col-s-12 
+		width: 100%
+
+	.three-cloumns-text
+		button
+			margin-bottom: 50px
+
+
+

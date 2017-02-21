@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<title>ZADANIE5</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Marcin">
+		<meta name="keywords" content="ZADANIE5">
+		<meta name="description" content="ZADANIE5">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="sass/style.css">
+	</head>
+	<body>
+	<header>
+		<nav class="container clearfix">
+			<h2><a href="#">Introspect</a></h2>
+			<div>
+				<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+			</div>
+			<ul  class="mobile-menu">
+				<li class="clearfix"><a href="#">Home</a></li>
+				<li><a href="#">Generic</a></li>
+				<li><a href="#">Elements</a></li>
+			</ul>	
+		</nav>
+	</header>
+	<section class="hero">
+		<div class="container clearfix">
+			<div class="col-7">
+				<h1><span>Introspect</span> fully responsive site templated replicated by me</h1>
+				<button>Get started</button>
+			</div>
+		</div>
+	</section><!--hero-->
+	<section class="wide-text">
+		<div class="container clearfix">
+			<div class="col-12">
+				<h2>Magna eitiam lorem</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<button>Learn more</button>
+			</div>
+		</div>
+	</section><!--wide-text-->
+	<section class="two-columns-text">
+		<div class="container clearfix">
+			<div class="col-6 col-m-12">
+				<h3>Excepteur sint</h3>
+				<img src="img/pic01.jpg" alt="image1" title="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+			</div>
+			<div class="col-6 col-m-12">
+				<h3>Nostrud exercitation ullamco</h3>
+				<img src="img/pic02.jpg" alt="image1" title="">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+			</div>
+		</div>
+	</section><!--two-columns-text-->
+	<section class="three-cloumns-text">
+		<div class="container clearfix">
+			<div class="col-4 col-m-6 col-s-12">
+				<i class="fa fa-laptop fa-3x" aria-hidden="true"></i>
+				<h3>Lorem ipsum</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<button>Learn more</button>
+			</div>
+			<div class="col-4 col-m-6 col-s-12">
+				<i class="fa fa-diamond fa-3x" aria-hidden="true"></i>
+				<h3>Dolore magna</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<button>Learn more</button>
+			</div>
+			<div class="col-4 col-m-12 col-s-12">
+				<i class="fa fa-calendar fa-3x" aria-hidden="true"></i>
+				<h3>Incididunt ut labore</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<button>Learn more</button>
+			</div>
+		</div>
+	</section><!--three-columns-text-->
+	<footer>
+		<div class="container clearfix">
+			<h2>Get in touch</h2>
+			<form>
+				<div class="col-6 col-s-12">
+					<label for="male">Name</label><input type="text" name="name" id="male">
+				</div>
+				<div class="col-6 col-s-12">
+					<label for="email">Email</label><input type="email" name="email" id="email">
+				</div>
+				<div class="col-12 col-s-12">
+					<label for="message">Message</label>
+					<textarea id="message" rows="20">
+					</textarea>
+				</div>
+				<div class="col-3">
+				<input type="submit" value="Send message">
+				</div>
+			</form>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function() {
+
+			$('.hero').hide().fadeIn(2000);
+
+				$('.fa-bars').click(function() {
+			  	$('.mobile-menu').animate({
+			  	top: "0px"
+			  	}, 200)
+			});
+
+				$('li').click(function() {
+			  	$('.mobile-menu').animate({
+			  	top: "-400px"
+			  	}, 500)
+			});
+		});
+	</script>
+	</body>
+</html>
