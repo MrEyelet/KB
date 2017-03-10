@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,700')
+
+$font1: 	'Open Sans Condensed', sans-serif;
+$font2: 	'Open Sans', sans-serif;
+$white:		#fff 
+$red:		#E84546
+$grey:		#ccc
+
+html
+	box-sizing: border-box
+*,
+*:before,
+*:after
+	box-sizing: inherit
+
+body
+	font-family: $font2
+
+section
+	margin: 100px 0
+
+.btn
+	margin-bottom: 50px
+	border-radius: 0px
+
+header
+	background: url('../images/build/banner.jpg')
+	overflow: hidden
+	.navbar-default .navbar-nav
+		li
+			a
+				font-size: 16px
+				text-transform: uppercase
+				font-family: $font1
+				transition: .5s
+				&:hover
+					color: #E84546
+	.navbar-default
+		background: none
+		border: none
+	.navbar-collapse
+		border-bottom: 1px solid $white
+	h1
+		text-transform: uppercase
+		color: $white
+		width: 60%
+		margin: 0 auto
+		padding-top: 100px
+		margin-bottom: 25px
+		letter-spacing: 1px
+		font-size: 50px
+		font-family: $font1
+	p 	
+		color: $white
+		width: 50%
+		margin: 0 auto
+		margin-bottom: 100px
+
+.icons-section
+	.row	
+		text-align: center
+		color: $red
+		&:nth-of-type(1)
+			margin-bottom: 100px
+	h4
+		text-transform: uppercase
+		color: #000
+		font-family: $font1
+	p
+		color: #000
+	
+.gallery1
+	padding: 0
+	[class*="col-"]
+		padding: 1px
+
+[class*="image-"]
+	position: relative
+
+.layer
+	background: none
+	width: 100%
+	height: 100%
+	position: absolute
+	transition: .5s
+	color: transparent
+	&:hover 
+		background: rgba(255, 0, 0, 0.5)
+		cursor: pointer
+		color: $white
+	.inner-text
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+		h3, p 
+			margin: 0
+			padding: 0
+			text-align: center
+
+.image-1
+	background: url('../images/build/work-1.jpg')
+	background-size: cover
+	background-position: center
+	height: 350px
+	overflow: hidden
+.image-2
+	background: url('../images/build/work-2.jpg')
+	background-size: cover
+	background-position: center
+	height: 350px
+	overflow: hidden
+.image-3
+	background: url('../images/build/work-3.jpg')
+	background-size: cover
+	background-position: center
+	height: 350px
+	overflow: hidden
+.image-4
+	background: url('../images/build/work-4.jpg')
+	background-size: cover
+	background-position: center
+	height: 350px
+	overflow: hidden
+.image-5
+	background: url('../images/build/work-5.jpg')
+	background-size: cover
+	background-position: center
+	height: 350px
+	overflow: hidden
+.image-6
+	background: url('../images/build/work-6.jpg')
+	background-size: cover
+	background-position: center
+	height: 350px
+	overflow: hidden
+.image-7
+	background: url('../images/build/work-7.jpg')
+	background-size: cover
+	background-position: center
+	height: 350px
+	overflow: hidden
+.image-8
+	background: url('../images/build/work-8.jpg')
+	background-size: cover
+	background-position: center
+	height: 350px
+	overflow: hidden
+
+.gallery2
+	margin-bottom: 100px
+	h5
+		color: $red
+		text-transform: uppercase
+		margin-bottom: 25px
+		font-family: $font1
+	p 
+		margin-bottom: 25px
+	img 
+		display: block
+		margin: 0 auto
+	.fa 
+		color: $grey
+		border: 1px solid $grey
+		width: 50px
+		height: 50px
+		text-align: center
+		line-height: 50px
+		transition: .5s
+		cursor: pointer
+		&:hover
+			color: $red
+
+.carousel-inner
+	img 
+		width: 100%
+.carousel-bg1,
+.carousel-bg2
+	width: 100%
+	height: 338px
+	overflow: auto
+	p 
+		text-align: right
+		padding: 50px 100px 50px 50px
+	cite 
+		float: right
+		text-transform: uppercase
+		padding-right: 100px
+.carousel-bg1
+	background: $red
+.carousel-bg2
+	background: $grey
+
+.carousel-with-background,
+.carousel-with-image
+	margin: 0
+	padding: 0
+
+.ready
+	h2
+		font-family: $font1
+	p 
+		margin-bottom: 50px
+	.btn 
+		margin-bottom: 0
+		width: 300px
+footer
+	.wide-footer
+		padding: 50px 0 100px
+		background: #3A3E63
+	p 
+		color: #8084A1
+	h3
+		font-family: $font1
+		color: $white
+		text-transform: uppercase
+		margin-bottom: 25px
+	.fa	
+		color: $white
+		border: 1px solid $white
+		text-align: center
+		width: 50px
+		height: 50px
+		line-height: 50px
+		transition: .5s
+		cursor: pointer
+		&:hover
+			color: $red
+	.footer-bottom
+		background: #313455
+		padding: 20px 0
+		p 
+			margin: 0
+			color: #8084A1
+		span 
+			color: #88845c
+		.fa
+			border: none
+			color: $red
+			margin-bottom: 0
+			padding: 0 20px 0 5px
+			line-height: 0
+			width: 15px
+			height: 15px
+
