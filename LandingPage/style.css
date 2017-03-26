@@ -143,13 +143,9 @@ header {
     border-radius: 50%;
     position: absolute;
     bottom: 15px;
-    left: 48%;
+    left: 50%;
     transform: translateX(-50%);
-    transition: 0.5s;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-name: up_and_down; }
+    transition: 0.5s; }
     header .arrow .fa {
       transition: 0.5s; }
     header .arrow i {
@@ -157,13 +153,7 @@ header {
       left: 50%;
       transform: translateX(-50%);
       color: #000; }
-@keyframes up_and_down {
-  0% {
-    transform: scale(1.15, 1.15); }
-  50% {
-    transform: scale(1, 1); }
-  100% {
-    transform: scale(1.15, 1.15); } }
+
 nav {
   background: #827A66;
   height: 50px;
@@ -356,7 +346,8 @@ button {
 
 /*MEDIA QUERIES */
 @media(min-width: 768px) {
-  .hamburger-menu {
+  .hamburger-menu,
+  .icon-close {
     display: none; }
 
   ul li a:hover {
@@ -430,7 +421,19 @@ button {
     width: 100%; }
 
   .contact .col-12 {
-    width: 100%; } }
+    width: 100%; }
+
+  .sticky {
+    top: -200px; }
+
+  .hamburger-menu,
+  .icon-close {
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-100%);
+    display: inline-block;
+    color: #fff; } }
 @media(max-width: 480px) {
   .col-s-1 {
     width: 8.33%; }

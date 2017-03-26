@@ -131,7 +131,7 @@ header
 		border-radius: 50%
 		position: absolute
 		bottom: 15px
-		left: 48%
+		left: 50%
 		transform: translateX(-50%)
 		transition: .5s
 		.fa 
@@ -142,17 +142,17 @@ header
 			transform: translateX(-50%)
 			color: $black
 		//arrow animation start
-		animation-duration: 2s
-		animation-timing-function: ease-in-out
-		animation-iteration-count: infinite
-		animation-name: up_and_down
-		@keyframes up_and_down
-			0%
-				transform: scale(1.150,1.150)
-			50%
-				transform: scale(1,1)
-			100%
-				transform: scale(1.150,1.150)
+		//animation-duration: 2s
+		//animation-timing-function: ease-in-out
+		//animation-iteration-count: infinite
+		//animation-name: smaller_larger
+		//@keyframes smaller_larger
+		//	0%
+		//		transform: scale(1.150,1.150)
+		//	50%
+		//		transform: scale(1,1)
+		//	100%
+		//		transform: scale(1.150,1.150)
 
 		//arrow animation end
 nav
@@ -368,7 +368,8 @@ button
 /*MEDIA QUERIES*/
 
 @media(min-width: 768px)
-	.hamburger-menu
+	.hamburger-menu,
+	.icon-close
 		display: none
 
 	ul
@@ -439,7 +440,17 @@ button
 		.col-12
 			width: 100%
 
-	
+	.sticky
+		top: -200px
+
+	.hamburger-menu,
+	.icon-close
+		padding: 10px
+		position: relative
+		left: 50%
+		transform: translate(-100%)
+		display: inline-block
+		color: $white
 
 @media(max-width: 480px)
 

@@ -18,7 +18,7 @@
 	});
 });*/
   $(window).on('scroll', function() {
-    var navHeight = $(window).height() - 50;
+    var navHeight = $(window).height();
     if  ($(window).scrollTop() > navHeight ) {
       $('nav').addClass('sticky');
     } else {
