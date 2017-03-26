@@ -138,6 +138,17 @@ header
 			left: 50%
 			transform: translateX(-50%)
 			color: $black
+		animation-duration: 2s
+		animation-timing-function: ease-in-out
+		animation-iteration-count: infinite
+		animation-name: upDown
+		@keyframes upDown
+			0%
+				transform: translateY(-10%)
+			50%
+				transform: translateY(0)
+			100%
+				transform: translateY(-10%)
 
 nav
 	background: $color2

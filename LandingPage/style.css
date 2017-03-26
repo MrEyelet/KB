@@ -144,13 +144,23 @@ header {
     position: absolute;
     bottom: 15px;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-name: upDown; }
     header .arrow i {
       position: relative;
       left: 50%;
       transform: translateX(-50%);
       color: #000; }
-
+@keyframes upDown {
+  0% {
+    transform: translateY(-10%); }
+  50% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-10%); } }
 nav {
   background: #827A66;
   height: 50px;
