@@ -131,25 +131,30 @@ header
 		border-radius: 50%
 		position: absolute
 		bottom: 15px
-		left: 50%
+		left: 48%
 		transform: translateX(-50%)
+		transition: .5s
+		.fa 
+			transition: .5s
 		i 
 			position: relative
 			left: 50%
 			transform: translateX(-50%)
 			color: $black
+		//arrow animation start
 		animation-duration: 2s
 		animation-timing-function: ease-in-out
 		animation-iteration-count: infinite
-		animation-name: upDown
-		@keyframes upDown
+		animation-name: up_and_down
+		@keyframes up_and_down
 			0%
-				transform: translateY(-10%)
+				transform: scale(1.150,1.150)
 			50%
-				transform: translateY(0)
+				transform: scale(1,1)
 			100%
-				transform: translateY(-10%)
+				transform: scale(1.150,1.150)
 
+		//arrow animation end
 nav
 	background: $color2
 	height: 50px
@@ -371,6 +376,12 @@ button
 			a
 				&:hover
 					color: $color1
+	.arrow
+		&:hover
+			border-color: $white
+		&:hover .fa
+			color: $white
+			cursor: pointer
 	.portfolio
 		.layer
 			&:hover

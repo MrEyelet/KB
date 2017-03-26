@@ -143,24 +143,27 @@ header {
     border-radius: 50%;
     position: absolute;
     bottom: 15px;
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
+    transition: 0.5s;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-name: upDown; }
+    animation-name: up_and_down; }
+    header .arrow .fa {
+      transition: 0.5s; }
     header .arrow i {
       position: relative;
       left: 50%;
       transform: translateX(-50%);
       color: #000; }
-@keyframes upDown {
+@keyframes up_and_down {
   0% {
-    transform: translateY(-10%); }
+    transform: scale(1.15, 1.15); }
   50% {
-    transform: translateY(0); }
+    transform: scale(1, 1); }
   100% {
-    transform: translateY(-10%); } }
+    transform: scale(1.15, 1.15); } }
 nav {
   background: #827A66;
   height: 50px;
@@ -358,6 +361,12 @@ button {
 
   ul li a:hover {
     color: #E6B531; }
+
+  .arrow:hover {
+    border-color: #fff; }
+  .arrow:hover .fa {
+    color: #fff;
+    cursor: pointer; }
 
   .portfolio .layer:hover {
     background: rgba(0, 0, 0, 0.7); }
