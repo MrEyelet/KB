@@ -436,7 +436,6 @@ button {
     color: #fff; }
 
   .icon-close {
-    display: none;
     padding: 5px;
     color: #fff; } }
 @media(max-width: 480px) {
