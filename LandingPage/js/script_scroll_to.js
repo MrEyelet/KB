@@ -10,7 +10,7 @@ $(function() {
 		}
 		if($(document).width() <= 767) {
 			$('li').slideUp(1000);
-			$('.hamburger-menu').fadeIn();
+			$('.hamburger-menu').fadeIn(500);
 			$('.icon-close').hide();
 		}
 	});
