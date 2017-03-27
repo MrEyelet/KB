@@ -2,12 +2,12 @@ $(function(){
 	$('.hamburger-menu').click(function(){
 		$('li').slideDown(500);
 		$('.hamburger-menu').hide();
-		$('.icon-close').fadeIn();
+		$('.icon-close').fadeIn(500S);
 	});
 
 	$('.icon-close').click(function() {
 	    $('li').slideUp(500);
-	    $('.hamburger-menu').fadeIn();
+	    $('.hamburger-menu').fadeIn(500);
 	    $('.icon-close').hide();
 	});
 });
