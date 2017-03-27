@@ -433,13 +433,12 @@ button {
 
   .hamburger-menu {
     padding: 5px;
-    color: #fff;
-    display: inline-block; }
+    color: #fff; }
 
   .icon-close {
+    display: none;
     padding: 5px;
-    color: #fff;
-    display: inline-block; } }
+    color: #fff; } }
 @media(max-width: 480px) {
   .col-s-1 {
     width: 8.33%; }
