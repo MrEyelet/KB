@@ -1,14 +1,13 @@
 $(function(){
 	$('.hamburger-menu').click(function(){
-		$('.sticky').animate({
-			top: "0px"
-		}, 200)
+		$('li').slideDown();
+		$('.hamburger-menu').fadeOut();
+		$('.icon-close').fadeIn();
 	});
 
 	$('.icon-close').click(function() {
-	    $('.sticky').animate({
-	      top: "-200px"
-	    }, 200)
-
+	    $('li').slideUp();
+	    $('.hamburger-menu').fadeIn();
+	    $('.icon-close').fadeOut();
 	});
 });

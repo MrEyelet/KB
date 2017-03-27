@@ -1,5 +1,5 @@
-/*$(function() {
-	var NavY = $('nav').offset().top;
+$(function() {
+	/*var NavY = $('nav').offset().top;
 	 
 	function stickyNav(){
 		var ScrollY = $(window).scrollTop();
@@ -16,13 +16,15 @@
 	$(window).scroll(function() {
 		stickyNav();
 	});
-});*/
-  $(window).on('scroll', function() {
-    var navHeight = $(window).height();
-    if  ($(window).scrollTop() > navHeight ) {
-      $('nav').addClass('sticky');
-    } else {
-      $('nav').removeClass('sticky');
-    }
-  });
-
+*/
+	$(window).scroll(function() {
+		var navHeight = $(window).height();//this measure height of the whole window
+    	if  ($(window).scrollTop() > navHeight ) {//scrollTop is vertical scrollbar position from top
+      		$('nav').addClass('sticky');
+    	} else {
+      		$('nav').removeClass('sticky');
+    	}
+  	});
+  //alert($(window).height());
+  //alert($(window).scrollTop());
+});

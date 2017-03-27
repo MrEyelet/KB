@@ -428,10 +428,11 @@ button
 
 	nav
 		height: auto
+		text-align: center
 		ul
 			width: 100%
 			li 
-				display: block
+				display: none
 				width: 100%
 	.o-mnie
 		.col-12
@@ -440,16 +441,12 @@ button
 		.col-12
 			width: 100%
 
-	.sticky
-		top: -200px
-
-	.hamburger-menu,
+	.hamburger-menu
+		padding: 5px
+		color: $white
 	.icon-close
-		padding: 10px
-		position: relative
-		left: 50%
-		transform: translate(-100%)
-		display: inline-block
+		display: none
+		padding: 5px
 		color: $white
 
 @media(max-width: 480px)
