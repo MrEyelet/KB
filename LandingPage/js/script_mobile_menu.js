@@ -2,7 +2,7 @@ $(function(){
 	$('.hamburger-menu').click(function(){
 		$('li').slideDown(500);
 		$('.hamburger-menu').hide();
-		$('.icon-close').fadeIn(500S);
+		$('.icon-close').fadeIn(500);
 	});
 
 	$('.icon-close').click(function() {
