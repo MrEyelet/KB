@@ -125,6 +125,7 @@ header {
   header h1 {
     margin-top: 80px;
     font-size: 46px;
+    letter-spacing: 2px;
     font-family: "Open Sans Condensed", sans-serif; }
   header h2 {
     text-align: center;
@@ -284,7 +285,8 @@ nav {
     opacity: 0;
     text-align: center;
     letter-spacing: 2px;
-    transition: 0.5s; }
+    transition: 0.5s;
+    padding: 10px; }
 
 button {
   display: block;
