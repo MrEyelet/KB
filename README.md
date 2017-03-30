@@ -1,1 +1,1 @@
-# Some of replicated layouts
+Practice with PSD to HTML and grid
