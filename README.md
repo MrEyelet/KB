@@ -1,1 +1,1 @@
-# KB
+# Some of replicated layouts
