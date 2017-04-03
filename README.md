@@ -1,1 +1,1 @@
-# Practice with PSD to HTML and grid
+# Small practice with javaScript

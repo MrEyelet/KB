@@ -101,8 +101,23 @@ header
 	color: $white
 	.container
 		border-color: $white
+		border-top: 0
 	h2
 		background: rgba(0, 0, 0, 0)
+
+	.container::before,
+	.container::after 
+		content: ''
+		width: 35%
+		height: 3px
+		background: $white
+		display: block
+		position: absolute
+		top: 0
+	.container::before
+		left: 0
+	.container::after
+		right: 0
 
 .what-we-do
 	img

@@ -6,6 +6,7 @@
   letter-spacing: 2px;
   text-transform: uppercase; }
 
+/*General */
 * {
   box-sizing: border-box; }
 
@@ -86,9 +87,23 @@ header {
   overflow: hidden;
   color: #fff; }
   .services .container {
-    border-color: #fff; }
+    border-color: #fff;
+    border-top: 0; }
   .services h2 {
     background: transparent; }
+  .services .container::before,
+  .services .container::after {
+    content: "";
+    width: 35%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: 0; }
+  .services .container::before {
+    left: 0; }
+  .services .container::after {
+    right: 0; }
 
 .what-we-do img {
   margin-bottom: 25px; }
